@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" src="css/styles.css"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+<section class="topDiv">
+<h3 class="pageLabel">IP Address Tracker</h3>
+<input type="text" name="" id="idbox" placeholder="Search for any IP address or domain" value="">
+<input type="button" value="Go" id="searchbtn">
+</section>
+
+<section class="dataDisplay">
+
+
+  IP Address
+  Location
+  Timezone
+    UTC <!-- add offset value dynamically using the API -->
+  ISP
+</section>
+
+  <section class="theMap">
+    <div id="map"> </div>
+
+  </section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/weightloss01471">Yellow</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
