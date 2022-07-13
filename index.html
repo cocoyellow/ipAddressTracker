@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" src="css/styles.css"> 
+  <link rel="stylesheet" href="css/styles.css"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
   <title>Frontend Mentor | IP Address Tracker</title>
 
 </head>
@@ -17,21 +23,45 @@
 <input type="button" value="Go" id="searchbtn">
 </section>
 
-<section class="dataDisplay">
+<section class="display">
+<div class="dataDisplay">
 
+<div class="ipadress">
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+  <h4>IP Address</h4>
+  <span id="theIPaddress">  </span>
+
+</div>
+
+<div class="location">
+
+  <h4>Location</h4>
+  <span id="theLocation">  </span>
+
+</div>
+
+ <div class="timeZone">
+
+  <h4>Timezone</h4>
+  UTC <span id="theTimezone">  GMT</span>
+
+ </div>
+
+  <div id="isp">
+
+    <h4>ISP</h4>
+    <span id="theisp">  </span>
+
+  </div>
+
+</div>
 </section>
-
-  <section class="theMap">
+<!--
+  <section class="theMap"> -->
     <div id="map"> </div>
-
+<!--
   </section>
-
+-->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
